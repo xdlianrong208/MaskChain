@@ -1,0 +1,458 @@
+export default {
+  // 首页统计块列表常量
+  TOTAL_STATISTICS_LIST: [
+    {
+      label: '当前块高',
+      route: 'block',
+      class: 'bg-8693f3 margin-right-15 margin-bottom-15',
+      value: 0
+    },
+    {
+      label: '交易总量',
+      route: 'transaction',
+      class: 'bg-bc8dee margin-left-15 margin-bottom-15',
+      value: 0
+    },
+    {
+      label: '正在处理的交易数',
+      route: '',
+      class: 'bg-ffa897 margin-top-15 margin-right-15',
+      value: 0
+    },
+    {
+      label: '当前承诺池中承诺个数',
+      route: '',
+      class: 'bg-89c3f8 margin-top-15  margin-left-15',
+      value: 0
+    }
+  ],
+  MENU_LIST: [
+    {
+      title: '配置',
+      subMenu: [
+        {
+          title: '群组配置',
+          name: 'groupConfig'
+        },
+        {
+          title: '节点配置',
+          name: 'nodeConfig'
+        },
+        {
+          title: '合约配置',
+          name: 'contractConfig'
+        }
+
+      ]
+    },
+    {
+      title: '区块链信息',
+      subMenu: [
+        {
+          title: '概览',
+          name: 'home'
+        },
+        {
+          title: '查看区块',
+          name: 'block'
+        },
+        {
+          title: '查看交易',
+          name: 'transaction'
+        }
+        // {
+        //     title: '正在处理的交易',
+        //     name: 'pendingTransaction',
+        // },
+        // {
+        //     title: '统计指标',
+        //     name: 'singleStatistics',
+        // },
+        // {
+        //     title: '交易流',
+        //     name: 'transactionStatistics'
+        // },
+        // {
+        //     title: '共识流',
+        //     name: 'blockStatistics',
+        // }
+      ]
+    }
+  ],
+  //    error info
+  ERROR: '服务器内部错误',
+
+  DELETE_NODE_SUCCESS: '删除节点成功',
+
+  ADD_NODE_SUCCESS: '新增节点成功',
+
+  EDIT_NODE_SUCCESS: '修改节点成功',
+
+  DELETE_CHAIN_SUCCESS: '删除区块链成功',
+
+  DELETE_PROJECT_SUCCESS: '删除项目成功',
+
+  ADD_GROUP_SUCCESS: '新增群组成功',
+
+  INTERVALTIME: 20000,
+
+  CHAIN_OPTION: [
+    {
+      label: '联盟委员链',
+      value: '00'
+    },
+    {
+      label: '业务存证链',
+      value: '01'
+    }
+  ],
+  LIVE: {
+    0: '否',
+    1: '是'
+  },
+  TRANSACTION_ITEM_DATA: [
+    {
+      label: 'blockHash',
+      value: null
+    }, {
+      label: 'blockNumber',
+      value: null
+    }, {
+      label: 'gas',
+      value: null
+    }, {
+      label: 'from',
+      value: null
+    }, {
+      label: 'transactionIndex',
+      value: null
+    }, {
+      label: 'to',
+      value: null
+    }, {
+      label: 'nonce',
+      value: null
+    }, {
+      label: 'value',
+      value: null
+    }, {
+      label: 'hash',
+      value: null
+    }, {
+      label: 'gasPrice',
+      value: null
+    }
+  ],
+  TRANSACTION_BUY_ITEM_DATA: [
+    {
+      label: 'blockHash',
+      value: null
+    }, {
+      label: 'blockNumber',
+      value: null
+    }, {
+      label: 'cmv',
+      value: null
+    }, {
+      label: 'epkpc1',
+      value: null
+    }, {
+      label: 'epkpc2',
+      value: null
+    }, {
+      label: 'epkrc1',
+      value: null
+    }, {
+      label: 'epkrc2',
+      value: null
+    }, {
+      label: 'sigm',
+      value: null
+    }, {
+      label: 'sigmhash',
+      value: null
+    }, {
+      label: 'sigr',
+      value: null
+    }, {
+      label: 'sigs',
+      value: null
+    }, {
+      label: 'hash',
+      value: null
+    }, {
+      label: 'transactionIndex',
+      value: null
+    }
+  ],
+  TRANSACTION_TRANSFER_ITEM_DATA: [
+    {
+      label: 'blockHash',
+      value: null
+    }, {
+      label: 'blockNumber',
+      value: null
+    }, {
+      label: 'erpkc1',
+      value: null
+    }, {
+      label: 'erpkc2',
+      value: null
+    }, {
+      label: 'espkc1',
+      value: null
+    }, {
+      label: 'espkc2',
+      value: null
+    }, {
+      label: 'cmrpk',
+      value: null
+    }, {
+      label: 'cmspk',
+      value: null
+    }, {
+      label: 'rpkepg1',
+      value: null
+    }, {
+      label: 'rpkepg2',
+      value: null
+    }, {
+      label: 'rpkepy1',
+      value: null
+    }, {
+      label: 'rpkepy2',
+      value: null
+    }, {
+      label: 'rpkept1',
+      value: null
+    }, {
+      label: 'rpkept2',
+      value: null
+    }, {
+      label: 'rpkeps',
+      value: null
+    }, {
+      label: 'rpkepc',
+      value: null
+    }, {
+      label: 'spkepg1',
+      value: null
+    }, {
+      label: 'spkepg2',
+      value: null
+    }, {
+      label: 'spkepy1',
+      value: null
+    }, {
+      label: 'spkepy2',
+      value: null
+    }, {
+      label: 'spkept1',
+      value: null
+    }, {
+      label: 'spkept2',
+      value: null
+    }, {
+      label: 'spkeps',
+      value: null
+    }, {
+      label: 'spkepc',
+      value: null
+    }, {
+      label: 'evsc1',
+      value: null
+    }, {
+      label: 'evsc2',
+      value: null
+    }, {
+      label: 'cms',
+      value: null
+    }, {
+      label: 'evrc1',
+      value: null
+    }, {
+      label: 'evrc2',
+      value: null
+    }, {
+      label: 'cmr',
+      value: null
+    }, {
+      label: 'rcmfpg1',
+      value: null
+    }, {
+      label: 'rcmfpg2',
+      value: null
+    }, {
+      label: 'rcmfpy1',
+      value: null
+    }, {
+      label: 'rcmfpy2',
+      value: null
+    }, {
+      label: 'rcmfpt1',
+      value: null
+    }, {
+      label: 'rcmfpt2',
+      value: null
+    }, {
+      label: 'rcmfps',
+      value: null
+    }, {
+      label: 'rcmfpc',
+      value: null
+    }, {
+      label: 'scmfpg1',
+      value: null
+    }, {
+      label: 'scmfpg2',
+      value: null
+    }, {
+      label: 'scmfpy1',
+      value: null
+    }, {
+      label: 'scmfpy2',
+      value: null
+    }, {
+      label: 'scmfpt1',
+      value: null
+    }, {
+      label: 'scmfpt2',
+      value: null
+    }, {
+      label: 'scmfps',
+      value: null
+    }, {
+      label: 'scmfpc',
+      value: null
+    }, {
+      label: 'evsbsc1',
+      value: null
+    }, {
+      label: 'evsbsc2',
+      value: null
+    }, {
+      label: 'evoc1',
+      value: null
+    }, {
+      label: 'evoc2',
+      value: null
+    }, {
+      label: 'cmo',
+      value: null
+    }, {
+      label: 'voepg1',
+      value: null
+    }, {
+      label: 'voepg2',
+      value: null
+    }, {
+      label: 'voepy1',
+      value: null
+    }, {
+      label: 'voepy2',
+      value: null
+    }, {
+      label: 'voept1',
+      value: null
+    }, {
+      label: 'voept2',
+      value: null
+    }, {
+      label: 'voeps',
+      value: null
+    }, {
+      label: 'voepc',
+      value: null
+    }, {
+      label: 'bpy',
+      value: null
+    }, {
+      label: 'bpt',
+      value: null
+    }, {
+      label: 'bpsn1',
+      value: null
+    }, {
+      label: 'bpsn2',
+      value: null
+    }, {
+      label: 'bpsn3',
+      value: null
+    }, {
+      label: 'bpc',
+      value: null
+    }, {
+      label: 'cmsrc1',
+      value: null
+    }, {
+      label: 'cmsrc2',
+      value: null
+    }, {
+      label: 'cmrrc1',
+      value: null
+    }, {
+      label: 'cmrrc2',
+      value: null
+    }, {
+      label: 'hash',
+      value: null
+    }, {
+      label: 'transactionIndex',
+      value: null
+    }
+  ],
+  RECEIPT_ITEM_DATA: [
+    {
+      label: 'output',
+      value: null
+    }, {
+      label: 'blockHash',
+      value: null
+    }, {
+      label: 'gasUsed',
+      value: null
+    }, {
+      label: 'blockNumber',
+      value: null
+    }, {
+      label: 'contractAddress',
+      value: null
+    }, {
+      label: 'from',
+      value: null
+    }, {
+      label: 'transactionIndex',
+      value: null
+    }, {
+      label: 'to',
+      value: null
+    }, {
+      label: 'logsBloom',
+      value: null
+    }, {
+      label: 'transactionHash',
+      value: null
+    }, {
+      label: 'status',
+      value: null
+    }
+  ],
+  SYSTEM_CONTRACT_ADDRESS: [
+    {
+      contractName: 'Authority',
+      contractAddress: '0x0000000000000000000000000000000000001005'
+    },
+    {
+      contractName: 'CNS',
+      contractAddress: '0x0000000000000000000000000000000000001004'
+    },
+    {
+      contractName: 'SystemConfig',
+      contractAddress: '0x0000000000000000000000000000000000001000'
+    },
+    {
+      contractName: 'Consensus',
+      contractAddress: '0x0000000000000000000000000000000000001003'
+    }
+  ]
+}
