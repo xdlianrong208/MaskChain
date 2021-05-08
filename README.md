@@ -2,7 +2,7 @@
 
 ## MaskChain使用说明
 
-- 开发者可以像开发简单的应用程序一样，基于MaskChain区块链来开发应用场景。[点击查看开发者使用说明](https://github.com/xdlianrong208/MaskChain/MaskChain开发者文档)
+- 开发者可以像开发简单的应用程序一样，基于MaskChain区块链来开发应用场景。[点击查看开发者使用说明](https://github.com/xdlianrong208/MaskChain/tree/main/MaskChain%E5%BC%80%E5%8F%91%E8%80%85%E6%96%87%E6%A1%A3)
 - 开发者可以不用额外开发便可享受数据隐私保护、数据价值可用、数据多方可检验、数据可信、分布式存储、数据可溯源、数据防篡改等多种功能。
 
 - 基于MaskChain隐私计算链开发的应用，可以应用在众多领域（银行审计与资产对账、存证、匿名投票等等），来解决隐私保护形势下的数据孤岛问题、数据缺乏监管问题、数据不可信问题以及数据已被篡改等问题。
@@ -18,7 +18,7 @@
 
 ### 技术
 
-[点击查看MaskChain团队的开发日志](https://github.com/xdlianrong208/MaskChain/MaskChain开发日志)
+[点击查看MaskChain团队的开发日志](https://github.com/xdlianrong208/MaskChain/tree/main/MaskChain%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97)
 
 1. 隐私计算（定制化零知识证明算法，交易路径混淆）
 2. 基于Pederson承诺的UCMO账本模型
